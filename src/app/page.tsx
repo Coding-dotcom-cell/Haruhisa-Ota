@@ -17,7 +17,7 @@ export default function Home() {
           </h1>
           <p className="max-w-xl text-base leading-8 text-slate-600">
             ADHD・自閉スペクトラム症などの発達障害を専門とし、特に思春期以降の成人例に対する
-            診療・研究に取り組んでいます。
+            診療・研究に取り組んでいる。
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
@@ -41,15 +41,15 @@ export default function Home() {
           {[
             {
               title: "成人発達障害の専門診療",
-              body: "思春期以降のADHD・自閉スペクトラム症などについて専門的に対応します。",
+              body: "思春期以降のADHD・自閉スペクトラム症などについて専門的に対応する。",
             },
             {
               title: "脳画像・臨床研究",
-              body: "UC Davis MIND Instituteでの研究経験を活かし、発達障害の脳科学的研究に取り組みます。",
+              body: "UC Davis MIND Instituteでの研究経験を活かし、発達障害の脳科学的研究に取り組む。",
             },
             {
               title: "研究・教育活動",
-              body: "昭和医科大学発達障害医療研究所所長として、研究・人材育成にも力を注いでいます。",
+              body: "昭和医科大学発達障害医療研究所所長として、研究・人材育成にも力を注いでいる。",
             },
           ].map((item) => (
             <div

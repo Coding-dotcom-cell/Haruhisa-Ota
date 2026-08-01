@@ -30,12 +30,12 @@ export default function ProfilePage() {
       <p className="text-sm font-medium text-emerald-700">医師紹介</p>
       <h1 className="mt-2 text-3xl font-bold text-slate-900">{site.name}</h1>
       <p className="mt-6 text-base leading-8 text-slate-600">
-        {site.name}と申します。昭和大学医学部を卒業後、昭和大学附属烏山病院を含む関連病院などに
-        勤務し、成人の発達障害専門外来を担当しています。発達障害の専門施設であるUC Davis MIND
-        Instituteへの留学を経て現職に至ります。
+        昭和大学医学部を卒業後、昭和大学附属烏山病院を含む関連病院などに勤務し、成人の発達障害
+        専門外来を担当している。発達障害の専門施設であるUC Davis MIND Instituteへの留学を経て
+        現職に至る。
       </p>
       <p className="mt-4 text-base leading-8 text-slate-600">
-        発達障害、とくに思春期以降の成人例に対する診療や研究に取り組んでいます。
+        発達障害、とくに思春期以降の成人例に対する診療や研究に取り組んでいる。
       </p>
 
       <section className="mt-12">
