@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { getAllPosts } from "@/lib/posts";
@@ -8,30 +9,40 @@ export default function Home() {
   return (
     <div>
       <section className="border-b border-slate-200 bg-gradient-to-b from-emerald-50 to-white">
-        <div className="mx-auto flex max-w-5xl flex-col gap-6 px-6 py-20 sm:py-28">
-          <p className="text-sm font-medium tracking-wide text-emerald-700">
-            {site.department}
-          </p>
-          <h1 className="max-w-2xl text-3xl font-bold leading-snug text-slate-900 sm:text-4xl">
-            {site.name}
-          </h1>
-          <p className="max-w-xl text-base leading-8 text-slate-600">
-            ADHD・自閉スペクトラム症などの発達障害を専門とし、特に思春期以降の成人例に対する
-            診療・研究に取り組んでいる。
-          </p>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/services"
-              className="rounded-full bg-emerald-700 px-6 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-emerald-800"
-            >
-              診療案内を見る
-            </Link>
-            <Link
-              href="/profile"
-              className="rounded-full border border-slate-300 px-6 py-3 text-center text-sm font-medium text-slate-700 transition-colors hover:border-emerald-700 hover:text-emerald-700"
-            >
-              経歴を見る
-            </Link>
+        <div className="mx-auto flex max-w-5xl flex-col gap-8 px-6 py-20 sm:flex-row sm:items-center sm:py-28">
+          <Image
+            src="/profile.webp"
+            alt={site.name}
+            width={224}
+            height={224}
+            className="h-40 w-40 shrink-0 rounded-2xl object-cover shadow-sm sm:h-56 sm:w-56"
+            priority
+          />
+          <div className="flex flex-col gap-6">
+            <p className="text-sm font-medium tracking-wide text-emerald-700">
+              {site.department}
+            </p>
+            <h1 className="max-w-2xl text-3xl font-bold leading-snug text-slate-900 sm:text-4xl">
+              {site.name}
+            </h1>
+            <p className="max-w-xl text-base leading-8 text-slate-600">
+              ADHD・自閉スペクトラム症などの発達障害を専門とし、特に思春期以降の成人例に対する
+              診療・研究に取り組んでいる。
+            </p>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/services"
+                className="rounded-full bg-emerald-700 px-6 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-emerald-800"
+              >
+                診療案内を見る
+              </Link>
+              <Link
+                href="/profile"
+                className="rounded-full border border-slate-300 px-6 py-3 text-center text-sm font-medium text-slate-700 transition-colors hover:border-emerald-700 hover:text-emerald-700"
+              >
+                経歴を見る
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -49,7 +60,7 @@ export default function Home() {
             },
             {
               title: "研究・教育活動",
-              body: "昭和医科大学発達障害医療研究所所長として、研究・人材育成にも力を注いでいる。",
+              body: "昭和医科大学発達障害医療研究所所長として、研究・人材育成にも力を注ぐ。",
             },
           ].map((item) => (
             <div
