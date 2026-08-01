@@ -13,7 +13,7 @@ export default function Home() {
             {site.department}
           </p>
           <h1 className="max-w-2xl text-3xl font-bold leading-snug text-slate-900 sm:text-4xl">
-            {site.tagline}
+            {site.name}
           </h1>
           <p className="max-w-xl text-base leading-8 text-slate-600">
             ADHD・自閉スペクトラム症などの発達障害を専門とし、特に思春期以降の成人例に対する
