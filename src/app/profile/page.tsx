@@ -31,7 +31,7 @@ export default function ProfilePage() {
       <h1 className="mt-2 text-3xl font-bold text-slate-900">{site.name}</h1>
       <p className="mt-6 text-base leading-8 text-slate-600">
         昭和大学医学部を卒業後、昭和大学附属烏山病院を含む関連病院などに勤務し、成人の発達障害
-        専門外来を担当している。発達障害の専門施設であるUC Davis MIND Instituteへの留学を経て
+        専門外来を担当。発達障害の専門施設であるUC Davis MIND Instituteへの留学を経て
         現職に至る。
       </p>
       <p className="mt-4 text-base leading-8 text-slate-600">
