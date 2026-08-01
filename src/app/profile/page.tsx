@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -28,14 +29,27 @@ export default function ProfilePage() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
       <p className="text-sm font-medium text-emerald-700">医師紹介</p>
-      <h1 className="mt-2 text-3xl font-bold text-slate-900">{site.name}</h1>
-      <p className="mt-6 text-base leading-8 text-slate-600">
-        昭和大学医学部を卒業後、昭和大学附属烏山病院を含む関連病院などに勤務し、成人の発達障害
-        専門外来を担当。発達障害の専門施設であるUC Davis MIND Instituteへの留学を経て現職に至る。
-      </p>
-      <p className="mt-4 text-base leading-8 text-slate-600">
-        発達障害、とくに思春期以降の成人例に対する診療や研究に取り組んでいる。
-      </p>
+
+      <div className="mt-4 flex flex-col gap-8 sm:flex-row sm:items-start">
+        <Image
+          src="/profile.webp"
+          alt={site.name}
+          width={192}
+          height={192}
+          className="h-40 w-40 shrink-0 rounded-2xl object-cover shadow-sm sm:h-48 sm:w-48"
+          priority
+        />
+        <div>
+          <h1 className="text-3xl font-bold text-slate-900">{site.name}</h1>
+          <p className="mt-6 text-base leading-8 text-slate-600">
+            昭和大学医学部を卒業後、昭和大学附属烏山病院を含む関連病院などに勤務し、成人の発達障害
+            専門外来を担当。発達障害の専門施設であるUC Davis MIND Instituteへの留学を経て現職に至る。
+          </p>
+          <p className="mt-4 text-base leading-8 text-slate-600">
+            発達障害、とくに思春期以降の成人例に対する診療や研究に取り組んでいる。
+          </p>
+        </div>
+      </div>
 
       <section className="mt-12">
         <h2 className="text-xl font-semibold text-slate-900">経歴</h2>
