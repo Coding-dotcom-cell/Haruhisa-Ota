@@ -45,6 +45,17 @@ export default function ServicesPage() {
         <p className="mt-2 text-sm leading-7 text-slate-600">
           外来受診をご希望の方は、昭和大学附属烏山病院までお問い合わせください。
         </p>
+        <div className="mt-6 overflow-hidden rounded-xl border border-slate-200">
+          <iframe
+            src="https://www.google.com/maps?q=昭和大学附属烏山病院&output=embed"
+            width="100%"
+            height="300"
+            style={{ border: 0 }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="昭和大学附属烏山病院の地図"
+          />
+        </div>
       </section>
     </div>
   );
