@@ -11,7 +11,7 @@ export default function Home() {
       <section className="border-b border-slate-200 bg-gradient-to-b from-emerald-50 to-white">
         <div className="mx-auto flex max-w-5xl flex-col gap-8 px-6 py-20 sm:flex-row sm:items-center sm:py-28">
           <Image
-            src="/profile.webp"
+            src="/profile.jpg"
             alt={site.name}
             width={224}
             height={224}

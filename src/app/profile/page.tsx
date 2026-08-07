@@ -32,7 +32,7 @@ export default function ProfilePage() {
 
       <div className="mt-4 flex flex-col gap-8 sm:flex-row sm:items-start">
         <Image
-          src="/profile.webp"
+          src="/profile.jpg"
           alt={site.name}
           width={192}
           height={192}
