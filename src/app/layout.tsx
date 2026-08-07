@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     title: `${site.clinicName}｜${site.department}`,
     description: `${site.clinicName}の公式ホームページ。${site.tagline}`,
   },
+  verification: {
+    google: "33leWoVsCdMkwW9GvpVWrp8gfir62xRPB7_xvBVRtJs",
+  },
 };
 
 const personJsonLd = {
