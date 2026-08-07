@@ -3,6 +3,7 @@ export const site = {
   clinicName: "太田晴久",
   department: "昭和医科大学准教授・発達障害医療研究所所長",
   tagline: "発達障害の専門診療と研究に取り組んでいる。",
+  url: "https://haruhisa-ota.vercel.app",
 } as const;
 
 export const nav = [

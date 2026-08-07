@@ -22,8 +22,34 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: `${site.clinicName}｜${site.department}`,
+  metadataBase: new URL(site.url),
+  title: {
+    default: `${site.clinicName}｜${site.department}`,
+    template: `%s｜${site.clinicName}`,
+  },
   description: `${site.clinicName}の公式ホームページ。${site.tagline}`,
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    url: site.url,
+    siteName: site.clinicName,
+    title: `${site.clinicName}｜${site.department}`,
+    description: `${site.clinicName}の公式ホームページ。${site.tagline}`,
+  },
+  twitter: {
+    card: "summary",
+    title: `${site.clinicName}｜${site.department}`,
+    description: `${site.clinicName}の公式ホームページ。${site.tagline}`,
+  },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  name: site.clinicName,
+  jobTitle: site.department,
+  description: site.tagline,
+  url: site.url,
 };
 
 export default function RootLayout({
@@ -37,6 +63,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${notoSansJP.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
