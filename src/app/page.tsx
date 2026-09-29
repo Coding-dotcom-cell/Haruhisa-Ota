@@ -25,6 +25,10 @@ export default function Home() {
               <Link href="/profile" className="rounded-full border border-slate-300 px-6 py-3 text-center text-sm font-medium text-slate-700 transition-colors hover:border-emerald-700 hover:text-emerald-700">経歴を見る</Link>
               <a href="#books" className="rounded-full px-4 py-3 text-sm font-medium text-emerald-700 underline decoration-emerald-300 underline-offset-4 hover:text-emerald-900">著書を見る</a>
             </div>
+            <div className="mt-6 flex flex-col items-start gap-3 border-t border-emerald-100 pt-5 text-sm">
+              <a href="https://x.com/OhtaHaruhisa" target="_blank" rel="noopener noreferrer" className="font-medium text-emerald-800 underline underline-offset-4 hover:text-emerald-950">X（旧Twitter）：@OhtaHaruhisa <span className="sr-only">（新しいタブで開きます）</span></a>
+              <a href="mailto:middr@med.showa-u.ac.jp" className="break-all font-medium text-emerald-800 underline underline-offset-4 hover:text-emerald-950">メール：middr@med.showa-u.ac.jp</a>
+            </div>
           </div>
           <figure className="min-w-0">
             <div className="rounded-sm bg-white p-3 shadow-lg ring-1 ring-slate-900/5 sm:p-4">
@@ -32,7 +36,6 @@ export default function Home() {
                 <Image src="/sons-artwork.jpg" alt="息子が描いた、紫色のぶどうと黄色やオレンジ色の果物の絵" width={675} height={956} sizes="(min-width: 1024px) 500px, 100vw" className="absolute left-0 h-auto w-full max-w-none" style={{ top: "-24.3948%" }} priority />
               </div>
             </div>
-            <figcaption className="mt-4 text-center text-sm leading-7 text-slate-600">息子が描いた、お気に入りの一枚</figcaption>
           </figure>
         </div>
       </section>
